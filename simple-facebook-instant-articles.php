@@ -400,8 +400,7 @@ class Simple_FB_Instant_Articles {
 			return '';
 		}
 
-		$template = trailingslashit( $this->template_path ) . 'image.php';
-		require( $template );
+		echo $this->render_template('image');
 	}
 
 	/**
