@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Simple Facebook Instant Articles
-Version: 0.5.3
+Version: 0.5.4
 Description: Add support to Facebook Instant Articles
 Author: Jake Spurlock, Human Made Limited
 Author URI: http://jakespurlock.com
@@ -955,7 +955,7 @@ class Simple_FB_Instant_Articles {
 		$node_html  = '';
 
 		foreach ( $node->childNodes as $child_node ) {
-			$node_html .= $child_node->ownerDocument->saveHTML( $child_node );
+			$node_html .= $child_node->ownerDocument->saveHTML( $child_node )."\n";
 		}
 
 		return $node_html;
